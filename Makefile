@@ -12,6 +12,7 @@ sync: clone-xhyve apply-patch
 		cp -f $$file $$(basename $$file) ; \
 	done
 	cp -r vendor/xhyve/include include
+	cp -r vendor/xhyve/lib9p lib9p
 
 apply-patch:
 	-cd vendor/xhyve; patch -N -p1 < ../../xhyve.patch
@@ -20,6 +21,6 @@ generate-patch: apply-patch
 	cd vendor/xhyve; git diff > ../../xhyve.patch
 
 clean:
-	rm -rf *.c vendor include
+	rm -rf *.c vendor include lib9p
 
 .PHONY: build clone-xhyve sync apply-patch generate-patch clean

@@ -41,6 +41,7 @@ XHYVE_SRC := \
 	vendor/xhyve/src/pci_irq.c \
 	vendor/xhyve/src/pci_lpc.c \
 	vendor/xhyve/src/pci_uart.c \
+	vendor/xhyve/src/pci_virtio_9p.c \
 	vendor/xhyve/src/pci_virtio_block.c \
 	vendor/xhyve/src/pci_virtio_net_tap.c \
 	vendor/xhyve/src/pci_virtio_net_vmnet.c \
