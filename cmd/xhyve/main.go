@@ -4,9 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/hooklift/xhyve"
+	"github.com/akatrevorjay/xhyve"
 )
-
 
 func main() {
 	done := make(chan bool)
