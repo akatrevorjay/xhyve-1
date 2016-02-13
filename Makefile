@@ -4,7 +4,7 @@ build:
 	go build -o xhyve cmd/xhyve/main.go
 
 clone-xhyve:
-	-git clone https://github.com/c4milo/xhyve.git vendor/xhyve
+	-git clone https://github.com/akatrevorjay/xhyve.git vendor/xhyve
 
 sync: clone-xhyve apply-patch
 	find . \( -name \*.orig -o -name \*.rej \) -delete
