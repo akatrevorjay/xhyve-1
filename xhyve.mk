@@ -64,3 +64,6 @@ SRC := \
 	$(VMM_SRC) \
 	$(XHYVE_SRC) \
 	$(FIRMWARE_SRC)
+
+CGO_INC += -Iinclude -Ilib9p -Ilib9p/include -Ivendor/xhyve/include -Ivendor/xhyve/lib9p -Ivendor/xhyve/lib9p/include
+

@@ -11,8 +11,7 @@ sync: clone-xhyve apply-patch
 	for file in $(SRC); do \
 		cp -f $$file $$(basename $$file) ; \
 	done
-	cp -r vendor/xhyve/include include
-	cp -r vendor/xhyve/lib9p lib9p
+	cp -r vendor/xhyve/include vendor/xhyve/lib9p ./
 
 apply-patch:
 	-cd vendor/xhyve; patch -N -p1 < ../../xhyve.patch
